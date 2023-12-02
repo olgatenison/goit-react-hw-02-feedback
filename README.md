@@ -1,5 +1,8 @@
 # React Homework Assignment
 
+<div align="center">
+  <img src="https://github.com/olgatenison/goit-react-hw-02-feedback/blob/main/assets/12.jpg" alt="Project Image" width="600" />
+</div>git add .
 ## Overview
 
 This project represents a homework assignment completed as part of a React
