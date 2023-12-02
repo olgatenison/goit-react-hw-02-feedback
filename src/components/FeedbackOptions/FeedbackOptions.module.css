@@ -24,7 +24,7 @@
   margin: 0 auto;
   justify-content: center;
   padding-top: 30px;
-  gap: 30px;
+  gap: 20px;
 }
 
 .btn::after,
