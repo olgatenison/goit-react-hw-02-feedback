@@ -5,8 +5,8 @@
   display: flex;
   margin: 0 auto;
   justify-content: center;
-  padding-top: 10px;
-  gap: 30px;
+
+  gap: 50px;
 }
 .txtspan {
   font-weight: 800;
@@ -17,5 +17,5 @@
   position: relative;
 }
 .firstwrapper {
-  padding-top: 60px;
+  padding-top: 10px;
 }
