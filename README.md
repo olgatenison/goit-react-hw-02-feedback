@@ -1,113 +1,64 @@
-# React homework template
+# React Homework Assignment
 
-Этот проект был создан при помощи
-[Create React App](https://github.com/facebook/create-react-app). Для знакомства
-и настройки дополнительных возможностей
-[обратись к документации](https://facebook.github.io/create-react-app/docs/getting-started).
+## Overview
 
-## Создание репозитория по шаблону
+This project represents a homework assignment completed as part of a React
+course. The assignment involved creating a feedback widget application with
+various functionalities.
 
-Используй этот репозиторий организации GoIT как шаблон для создания репозитория
-своего проекта. Для этого нажми на кнопку `«Use this template»` и выбери опцию
-`«Create a new repository»`, как показано на изображении.
+## Key Demonstrated Skills
 
-![Creating repo from a template step 1](./assets/template-step-1.png)
+1. **React Basics:**
 
-На следующем шаге откроется страница создания нового репозитория. Заполни поле
-его имени, убедись что репозиторий публичный, после чего нажми кнопку
-`«Create repository from template»`.
+   - Creating components and organizing them in separate files.
+   - Using state and lifecycle methods in React components for state management.
+   - Passing props and utilizing them within components.
 
-![Creating repo from a template step 2](./assets/template-step-2.png)
+2. **Code and Component Organization:**
 
-После того как репозиторий будет создан, необходимо перейти в настройки
-созданного репозитория на вкладку `Settings` > `Actions` > `General` как
-показано на изображении.
+   - Placing each component in a separate file within the appropriate folder.
+   - Using components according to the logical structure of the project.
 
-![Settings GitHub Actions permissions step 1](./assets/gh-actions-perm-1.png)
+3. **Refactoring and Component Composition:**
 
-Проскролив страницу до самого конца, в секции `«Workflow permissions»` выбери
-опцию `«Read and write permissions»` и поставь галочку в чекбоксе. Это
-необходимо для автоматизации процесса деплоя проекта.
+   - Maintaining state in the root component to support state changes in child
+     components.
+   - Separating logic and presentation into distinct components (`<Statistics>`
+     and `<FeedbackOptions>` components).
 
-![Settings GitHub Actions permissions step 2](./assets/gh-actions-perm-2.png)
+4. **State Management and Event Handling:**
 
-Теперь у тебя есть личный репозиторий проекта, со структурой файлов и папок
-репозитория-шаблона. Далее работай с ним как с любым другим личным репозиторием,
-клонируй его себе на компьютер, пиши код, делай коммиты и отправляй их на
-GitHub.
+   - Employing methods to update the state of components upon user interaction
+     (adding feedback).
+   - Calculating the total count and percentage of positive feedback.
 
-## Подготовка к работе
+5. **GitHub Usage:**
 
-1. Убедись что на компьютере установлена LTS-версия Node.js.
-   [Скачай и установи](https://nodejs.org/en/) её если необходимо.
-2. Установи базовые зависимости проекта командой `npm install`.
-3. Запусти режим разработки, выполнив команду `npm start`.
-4. Перейди в браузере по адресу [http://localhost:3000](http://localhost:3000).
-   Эта страница будет автоматически перезагружаться после сохранения изменений в
-   файлах проекта.
+   - Creating repositories on GitHub.
+   - Using GitHub Pages to host the working pages of the projects.
 
-## Деплой
+6. **Code Formatting and Cleanliness:**
 
-Продакшн версия проекта будет автоматически проходить линтинг, собираться и
-деплоиться на GitHub Pages, в ветку `gh-pages`, каждый раз когда обновляется
-ветка `main`. Например, после прямого пуша или принятого пул-реквеста. Для этого
-необходимо в файле `package.json` отредактировать поле `homepage`, заменив
-`your_username` и `your_repo_name` на свои, и отправить изменения на GitHub.
+   - Utilizing Prettier for automatic code formatting and ensuring code
+     cleanliness.
 
-```json
-"homepage": "https://your_username.github.io/your_repo_name/"
-```
+7. **CSS Modules and Styled Components:**
 
-Далее необходимо зайти в настройки GitHub-репозитория (`Settings` > `Pages`) и
-выставить раздачу продакшн версии файлов из папки `/root` ветки `gh-pages`, если
-это небыло сделано автоматически.
+   - Styling components using either CSS Modules or Styled Components.
 
-![GitHub Pages settings](./assets/repo-settings.png)
+8. **Conditional Rendering:**
 
-### Статус деплоя
+   - Displaying the statistics block only when feedback is present.
 
-Статус деплоя крайнего коммита отображается иконкой возле его идентификатора.
+9. **Working with External Libraries and Add-ons:**
+   - Using PropTypes for validating component props.
 
-- **Желтый цвет** - выполняется сборка и деплой проекта.
-- **Зеленый цвет** - деплой завершился успешно.
-- **Красный цвет** - во время линтинга, сборки или деплоя произошла ошибка.
+## Conclusion
 
-Более детальную информацию о статусе можно посмотреть кликнув по иконке, и в
-выпадающем окне перейти по ссылке `Details`.
+This project showcases an understanding of fundamental React concepts and the
+ability to create simple applications using these concepts.
 
-![Deployment status](./assets/deploy-status.png)
+## React homework template
 
-### Живая страница
-
-Через какое-то время, обычно пару минут, живую страницу можно будет посмотреть
-по адресу указанному в отредактированном свойстве `homepage`. Например, вот
-ссылка на живую версию для этого репозитория
-[https://goitacademy.github.io/react-homework-template](https://goitacademy.github.io/react-homework-template).
-
-Если открывается пустая страница, убедись что во вкладке `Console` нет ошибок
-связанных с неправильными путями к CSS и JS файлам проекта (**404**). Скорее
-всего у тебя неправильное значение свойства `homepage` в файле `package.json`.
-
-### Маршрутизация
-
-Если приложение использует библиотеку `react-router-dom` для маршрутизации,
-необходимо дополнительно настроить компонент `<BrowserRouter>`, передав в пропе
-`basename` точное название твоего репозитория. Слеш в начале строки обязателен.
-
-```jsx
-<BrowserRouter basename="/your_repo_name">
-  <App />
-</BrowserRouter>
-```
-
-## Как это работает
-
-![How it works](./assets/how-it-works.png)
-
-1. После каждого пуша в ветку `main` GitHub-репозитория, запускается специальный
-   скрипт (GitHub Action) из файла `.github/workflows/deploy.yml`.
-2. Все файлы репозитория копируются на сервер, где проект инициализируется и
-   проходит линтинг и сборку перед деплоем.
-3. Если все шаги прошли успешно, собранная продакшн версия файлов проекта
-   отправляется в ветку `gh-pages`. В противном случае, в логе выполнения
-   скрипта будет указано в чем проблема.
+[Create React App](https://github.com/facebook/create-react-app).
+[Documentation](https://facebook.github.io/create-react-app/docs/getting-started).
